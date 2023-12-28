@@ -1,0 +1,40 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.nav-container *{
+    cursor: pointer;
+}
+
+.nav-container > ul{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-container * {
+    font-size: 1.6rem;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    width: 12rem;
+    justify-content: space-between;
+}
+.logo{
+    width: 5rem;
+}
+
+.logo-container > h2{
+    font-size: 3.5rem;
+}
+
+.nav-container > .cart{
+    width: 12rem;
+}
