@@ -1,7 +1,7 @@
 
 .title{
     display: grid;
-    margin: 5rem 0 0 0;
+    margin: 2rem 0 0 0;
     font-weight: 300;
     text-align: center;
     font-size: 5.5rem;
@@ -103,14 +103,15 @@
 
 .middle-row{
     display: flex;
-    width: 80%;
+    width: 85%;
     justify-content: space-between;
     align-items: center;
+    height: 32rem;
 }
 
 .card{
-    width: 25rem;
-    height: 20rem;
+    width: 27rem;
+    height: 22rem;
     padding: 10px;
     z-index: 3;
     margin-top: 15%;
@@ -144,10 +145,24 @@ cursor: pointer;
     filter: drop-shadow( -1px 2px 26px rgba(255,255,255,0.75))
 }
 
+.card:hover > button{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
 .card img{
     width: 60%;
 }
 
 .card h3,p{
     font-size: 1.8rem;
+}
+.card button{
+    border: none;
+    padding: 7px 15px;
+    color: white;
+    background-color: black;
+    border-radius: 18px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }

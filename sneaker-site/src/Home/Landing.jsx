@@ -44,6 +44,7 @@ function HeaderCard({productShoe, text, price}){
             <h3>{text}</h3>
             <img src={productShoe} alt="" />
             <p>{price}</p>
+            <button>ADD TO CART</button>
             
         </div>
     )

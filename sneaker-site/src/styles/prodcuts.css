@@ -1,0 +1,28 @@
+.product-header{
+    font-weight: 300;
+    font-size: 8rem;
+    margin-top: 7rem;
+    margin-right: auto;
+    margin-left: 5rem;
+    text-transform: uppercase;
+}
+
+.slide-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+}
+
+.slide-container > h3{
+    font-weight: 500;
+    font-size: 2rem;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.slide-container > .description{
+    letter-spacing: -.1rem;
+    width: 70%;
+    line-height: 4rem;
+}
