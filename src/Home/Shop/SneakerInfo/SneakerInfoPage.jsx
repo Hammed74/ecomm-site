@@ -10,7 +10,7 @@ export default function SneakerInfoPage(){
     const product = products.find((product) => product.name === name);
 
     if(!product){
-       return <h1>Aint Nun Here</h1>
+       return <h1>Aint Nuffin Here</h1>
     }
 
     return (
