@@ -1,12 +1,10 @@
 import ShopGrid from "./ShopGrid"
-import Nav from "../Nav";
 
-export default function Shop(){
+export default function Shop({activeShoe, setActiveShoe}){
     return (
       <>
-      <Nav />
         <h1>SHOP</h1>
-        <ShopGrid />
+        <ShopGrid activeShoe={activeShoe} setActiveShoe={setActiveShoe}/>
       </>
     );
 }
