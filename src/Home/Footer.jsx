@@ -1,3 +1,3 @@
 export default function Footer(){
-    return <p> Hammed Sylla ©2023</p>
+    return <p className="footer"> Hammed Sylla ©2023</p>
 }
