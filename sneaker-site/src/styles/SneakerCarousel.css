@@ -98,3 +98,7 @@
   width: 65%;
   height: 65%;
 }
+.slide-container{
+  height: 100%;
+  justify-content: space-between;
+}

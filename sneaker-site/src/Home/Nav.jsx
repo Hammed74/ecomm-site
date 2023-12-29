@@ -13,7 +13,10 @@ export default function Nav(){
                 <Link to={"/shop"}><li>SHOP</li></Link>
                 <li>ABOUT</li>
             </ul>
-            <div className='cart'>CART</div>
+            <div className="cart-icon-container">
+                <div className='cart'>CART</div>
+                <span className='cart-badge'>5</span>
+            </div>
         </div>
     )
 }

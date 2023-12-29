@@ -15,7 +15,7 @@ const SneakerCarousel = (props) => {
   const onButtonClick = useCallback((emblaApi) => {
     const { autoplay } = emblaApi.plugins();
     if (!autoplay) return;
-    if (autoplay.options.stopOnInteraction !== false) autoplay.stop();
+    if (autoplay.options.stopOnInteraction !== true) autoplay.stop();
   }, []);
 
   const {

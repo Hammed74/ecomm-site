@@ -58,3 +58,31 @@ text-decoration: none;
 .nav-container > .cart{
     width: 12rem;
 }
+
+.cart-icon-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.cart{
+    position: relative;
+}
+
+.cart-badge{
+    font-weight: bold;
+    font-size: 1.3rem;
+    bottom: -0.8rem;
+    right: -1.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    text-align: center;
+    margin-left: 1rem;
+   
+}
+
+.cart-icon-container:hover > .cart-badge{
+ background-color: black;
+    color: white;
+}

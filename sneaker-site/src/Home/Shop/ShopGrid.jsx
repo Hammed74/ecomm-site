@@ -26,7 +26,7 @@ function Item({ name, image, price, item }) {
   return (
     <div onClick={() => console.log(item.name)} className="item">
       <h3>{name}</h3>
-      <img className="product-item" src={image} alt="item" />
+      <img className={"shoe"+item.id} src={image} alt="item" />
       <p>{price}</p>
     </div>
   );
