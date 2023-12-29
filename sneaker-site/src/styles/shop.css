@@ -1,0 +1,28 @@
+.product-grid{
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 5rem;
+    margin-top: 20rem;
+}
+
+.product-grid img{
+    width: 25rem;
+}
+
+.product-grid h3{
+    font-size: 16px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+.item:hover{
+    background-color: rgb(218, 218, 218);
+}

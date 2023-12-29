@@ -1,6 +1,6 @@
 .product-header{
     font-weight: 300;
-    font-size: 8rem;
+    font-size: 6rem;
     margin-top: 7rem;
     margin-right: auto;
     margin-left: 5rem;
@@ -22,7 +22,8 @@
 }
 
 .slide-container > .description{
+    text-align:left;
     letter-spacing: -.1rem;
-    width: 70%;
+    width: 100%;
     line-height: 4rem;
 }

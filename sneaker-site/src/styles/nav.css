@@ -17,6 +17,26 @@
     list-style: none;
 }
 
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list li{
+    display: inline;
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-list li:hover{
+  border-bottom: 3px solid black;
+}
+
+li:visited{
+text-decoration: none;
+}
+
 .nav-container * {
     font-size: 1.6rem;
 }

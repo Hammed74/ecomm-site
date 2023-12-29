@@ -1,19 +1,16 @@
 import { useState } from 'react'
-import Landing from './Home/Landing'
-import Nav from './Home/Nav'
-import ProductPage from './Products/Prodcuts'
-
+import { Link, Route, Routes } from 'react-router-dom'
+import Home from './Home';
+import Shop from './Home/Shop/Shop';
+import SneakerInfoPage from './Home/Shop/SneakerInfo/SneakerInfoPage';
 function App() {
-  const OPTIONS = { align: "start", loop: true };
-  const SLIDE_COUNT = 4;
-  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
   return (
-    <>
-      <Nav />
-      <Landing />
-      <ProductPage slides={SLIDES} options={OPTIONS} />
-    </>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/shop" element={<Shop />}/>
+      <Route path="/shop/:name" element={<SneakerInfoPage/>}/>
+    </Routes>
   );
 }
 

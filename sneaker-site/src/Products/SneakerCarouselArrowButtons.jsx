@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import "../styles/SneakerCarousel.css"
 
 export const usePrevNextButtons = (emblaApi, onButtonClick) => {
-  const [prevBtnDisabled, setPrevBtnDisabled] = useState(false);
+  const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
   const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
 
   const onPrevButtonClick = useCallback(() => {

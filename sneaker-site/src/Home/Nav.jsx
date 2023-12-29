@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/nav.css'
 
 
@@ -8,8 +9,8 @@ export default function Nav(){
                 <h2>LIME</h2>
             </div>
             <ul className='nav-list'>
-                <li>HOME</li>
-                <li>SHOP</li>
+                <Link to="/" ><li>HOME</li></Link>
+                <Link to={"/shop"}><li>SHOP</li></Link>
                 <li>ABOUT</li>
             </ul>
             <div className='cart'>CART</div>

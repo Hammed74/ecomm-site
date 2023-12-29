@@ -16,7 +16,7 @@ export default function Landing(){
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
             aut, tempora temporibus recusandae ipsam nesciunt.
           </p>
-          <button className="main-button">GO TO SNEAKER</button>
+          <button className="main-button">GO TO JORDAN 3 "WHITE CEMENT"</button>
           <div className="middle-row">
             <HeaderCard productShoe={Jordan1} text={'Jordan 1 "Chicago"'} price={"$180"}/>
               <div className="image-container">
