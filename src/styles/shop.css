@@ -3,7 +3,6 @@
     width: 90%;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 5rem;
-    margin-top: 20rem;
 }
 
 .product-grid img{
@@ -30,4 +29,10 @@
 
 .shoe6, .shoe7, .shoe8, .shoe9{
     rotate: y 180deg;
+}
+
+.shop-header{
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+    margin: 8rem;
 }

@@ -1,27 +1,39 @@
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 import "../../../styles/SneakerInfoPage.css";
 import { products } from "../ProductList";
 
-export default function SneakerInfoPage({setCart, activeShoe, setActiveShoe, activeSize, setActiveSize, cart}) {
+export default function SneakerInfoPage({setCart, cart}) {
   const { name } = useParams();
 
   const product = products.find((product) => product.name === name);
 
+ const [activeSize, setActiveSize] = useState(null);
+
   if (!product) {
     return <h1>Aint Nuffin Here</h1>;
   }
-
-  function handleSetActiveSize(size){
-    setActiveSize(size)
-    let newObj = {...activeShoe, size: size}
-    setActiveShoe(newObj)
-  }
-
-  function handleSetCart(){
-    let newCartArray = [...cart,activeShoe]
+  function handleSetCart(obj){
+    let newCartArray = [...cart, obj]
     setCart(newCartArray)
     console.log(newCartArray)
   }
+function onAddToCart(){
+  let newObj = {
+    image: product.src,
+    name: product.name,
+    price: product.price,
+    quantity: 1,
+    size: activeSize,
+    id: Date.now()
+  }
+handleSetCart(newObj)
+
+}
+
+function handleSetActiveSize(size){
+  setActiveSize(size)
+}
 
   return (
     <>
@@ -33,7 +45,7 @@ export default function SneakerInfoPage({setCart, activeShoe, setActiveShoe, act
             <p>{product.price}</p>
           </div>
           <p>{product.description}</p>
-          <button onClick={() => handleSetCart()}>ADD TO CART {product.price}</button>
+          <button onClick={() => onAddToCart()}>ADD TO CART {product.price}</button>
           <div className="sizes-container">
             <h3>Available Sizes</h3>
             <div className="shoe-size-container">

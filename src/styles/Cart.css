@@ -1,5 +1,6 @@
 .cart-page-container{
     width: 85%;
+    flex: 1;
 }
 
 .cart-container{
@@ -11,4 +12,11 @@
 
 .cart-container > img{
     width: 20rem;
+}
+
+.empty-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     flex: 1;
 }

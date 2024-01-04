@@ -1,12 +1,16 @@
 .about-page-container{
-    height: 80vh;
+    height: 70vh;
     display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
 .about-container{
     display: grid;
     grid-template: 1fr auto/1fr 1fr;
+    height: 60vh;
 }
 
 .about-container img{
