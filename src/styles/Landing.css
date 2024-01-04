@@ -26,8 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: blur(200px);
     -webkit-filter: blur(200px);
+    filter: blur(200px);
 }
 .blur-container{
     width: 99%;

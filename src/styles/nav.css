@@ -12,7 +12,7 @@
 
 .nav-container > ul{
     display: flex;
-    width: 20%;
+    width: max(20%, 40rem);
     justify-content: space-between;
     list-style: none;
 }

@@ -42,8 +42,12 @@ html{
     }
 
     .nav-list li{
-        font-size: 2rem;
+        font-size: 3rem;
     }
+    .cart{
+        font-size: 3rem;
+    }
+
     .header-shoe{
         width: 45rem;
     }
