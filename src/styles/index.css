@@ -16,6 +16,7 @@ html{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 .footer{
@@ -38,5 +39,15 @@ html{
 @media screen and (max-width: 768px){
     html{
         font-size: 4px;
+    }
+
+    .nav-list li{
+        font-size: 2rem;
+    }
+    .header-shoe{
+        width: 45rem;
+    }
+    .middle-row{
+        justify-content: space-around;
     }
 }
