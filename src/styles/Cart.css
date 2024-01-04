@@ -1,5 +1,5 @@
 .cart-page-container{
-    width: 85%;
+    width: min(85%, 160rem);
     flex: 1;
 }
 
@@ -19,4 +19,20 @@
     flex-direction: column;
     justify-content: center;
      flex: 1;
+}
+
+.cart-container button{
+         border: 3px solid transparent;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    justify-self: center;
+        font-size: 1.5rem;
+}
+
+.cart-container button:hover{
+    background-color: red;
 }

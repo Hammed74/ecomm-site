@@ -54,7 +54,7 @@ function CartItem({name, image, quantity, price, size, cart, id, setCart}){
             <h2>{price}</h2>
             <h2>{quantity}</h2>
             <h2>{size}</h2>
-            <button onClick={() => onDelete(id)}>delete button</button>
+            <button onClick={() => onDelete(id)}>REMOVE</button>
         </div>
     )
 }

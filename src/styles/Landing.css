@@ -40,8 +40,8 @@
 }
 
 .red{
-    left: 5%;
-        background-color: rgb(207, 204, 16)
+    left: 8%;
+        background-color: rgb(255, 234, 0)
 }
 .green{
     height: 60rem;
@@ -71,6 +71,7 @@
     border-radius: 18px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .landing-container > button:hover{
@@ -84,7 +85,7 @@
     margin-top: 5%;
 }
 .header-shoe{
-    width: 30vw;
+    width: 50rem;
     animation: hover 2s ease-in-out infinite;
 }
 
@@ -103,7 +104,7 @@
 
 .middle-row{
     display: flex;
-    width: 85%;
+    width: min(85%, 160rem);
     justify-content: space-between;
     align-items: center;
     height: 32rem;
@@ -125,6 +126,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 flex-direction: column;
+flex-shrink: 0;
 transition: 0.3s;
 cursor: pointer;
 }
@@ -159,12 +161,13 @@ cursor: pointer;
 }
 .card button{
     border: none;
-    padding: 7px 15px;
+    padding: 0.5rem 1rem;
     color: white;
     background-color: black;
-    border-radius: 18px;
+    border-radius: 15px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    font-size: 1.3rem;
 }
 
 .footer{

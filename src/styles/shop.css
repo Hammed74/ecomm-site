@@ -1,6 +1,6 @@
 .product-grid{
     display: grid;
-    width: 90%;
+    width: min(90%,160rem);
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 5rem;
 }
@@ -23,6 +23,10 @@
     height: 30rem;
 }
 
+.item > h3{
+    font-size: 2rem;
+}
+
 .item:hover{
     background-color: rgb(218, 218, 218);
 }
@@ -35,4 +39,6 @@
     font-size: 6rem;
     letter-spacing: 0.5rem;
     margin: 8rem;
+    text-wrap: nowrap;
 }
+

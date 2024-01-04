@@ -45,7 +45,7 @@ function handleSetActiveSize(size){
             <p>{product.price}</p>
           </div>
           <p>{product.description}</p>
-          <button onClick={() => onAddToCart()}>ADD TO CART {product.price}</button>
+          <button className="add-to-cart" onClick={() => onAddToCart()}>ADD TO CART {product.price}</button>
           <div className="sizes-container">
             <h3>Available Sizes</h3>
             <div className="shoe-size-container">
