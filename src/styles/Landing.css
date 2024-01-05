@@ -26,12 +26,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-filter: blur(200px);
-    filter: blur(200px);
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    filter: blur(min(200px,15vw));
 }
 .blur-container{
-    width: 99%;
-    height: 65rem;
+    width: 100vw;
+    height: 60rem;
      overflow: hidden;
        border-radius: 0 0 20px 20px;
        position: absolute;
@@ -42,14 +43,17 @@
 
 .red{
     left: 8%;
-        background-color: rgb(255, 234, 0)
+        background-color: rgb(255, 234, 0);
+        width: 40vw;
+        height: 60rem;
+        top: 0;
 }
 .green{
     height: 60rem;
-    width: 45rem;
-    transform: rotate(-45deg);
+    width: 40vw;
     right: -5%;
     background-color: rgb(255, 0, 0);
+    top: 0;
 }
 .landing-container{
     display: flex;
