@@ -54,4 +54,7 @@ html{
     .middle-row{
         justify-content: space-around;
     }
+    .success-pop-up{
+        width: 100%;
+    }
 }

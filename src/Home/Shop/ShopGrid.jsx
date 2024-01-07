@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function ShopGrid() {
   return (
+    <>
     <div className="product-grid">
       {products.map((item) => (
         <>
@@ -19,6 +20,7 @@ export default function ShopGrid() {
         </>
       ))}
     </div>
+    </>
   );
 }
 
